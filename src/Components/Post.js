@@ -12,7 +12,7 @@ const Post = ( {profilePic, imgName, username, timestamp, message}) => {
     var [showw, setShoww] = useState(null);
     useEffect (() => {
         if (imgName != null ){
-            setShoww(true);
+            setShoww("true");
             // const ele = <img src={`http://localhost:9000/retrive/images/single?name=${imgName}`} alt='images' />;
             console.log("this is showws value broooo",showw)
         }
@@ -41,7 +41,7 @@ const Post = ( {profilePic, imgName, username, timestamp, message}) => {
             <div className="post__bottom">
                 <p className="mess">{message}</p>
              <div  >
-                {showw && <img src={`http://localhost:9000/retrive/images/single?name=${imgName}`} alt='images' className="postImg"  />}
+                {showw && <img src={`https://facebook-clo.herokuapp.com/retrive/images/single?name=${imgName}`} alt='images' className="postImg"  />}
             </div>
             </div>
 
